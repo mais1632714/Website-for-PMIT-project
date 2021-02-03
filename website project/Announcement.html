@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<title> Announcement</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body{
+
+ 
+
+			margin: opx;
+			padding: 0px;
+			line-height: 1em;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size:15px;
+			color:#0000A0;
+		background: linear-gradient(to left, #9AEDEC 0%, #ffffff 100%);
+		}
+		#header {
+			top: 0px;
+			border: 0px;
+			position: fixed;
+			width: 70%;s
+			height: 150px;
+			margin: auto;
+			margin-left: 1%;
+			margin-right: 45%;
+			background: #80807F; }
+
+
+		a {color:black;}
+
+
+		
+		.w80{
+			width: 80%;
+			float: right;
+		}
+
+#p5
+{
+  float:"center";
+
+}
+#a5 {
+float:right;
+border-radius: 50px;
+  padding: 10px;
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+
+		#header_tab{
+			width: 1500px;
+			height: 90px;
+			background-color: #FCFEBF;
+
+			background-size: 100%;
+			margin-bottom: 0px;}
+
+		nav { width: 680px;}
+
+		nav ul {
+					padding: 0px;
+					margin: 0px;
+					color: #FCFEBF;
+					background: linear-gradient(to bottom, #80807F 0%, #ffffff 100%);
+					box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+					padding: 0 20px;
+					border-radius: 20px;
+					list-style: none;
+					position: relative;
+					display: block;
+				}
+
+		nav ul:after {
+						content: ""; clear: both; display: block;
+					 }
+
+		nav ul li {
+					float: left;
+				  }
+
+		nav ul li a {
+			display: block; padding:20px 20px;
+			color: #0000A0; text-decoration: none;
+
+				    }
+
+		nav ul li:hover {
+						text-decoration: underline;
+						color:#0000A0;
+						}
+
+		nav ul li:hover > ul {
+								display: inline;
+							 }
+
+		nav ul li:hover a {
+							color: #0000A0;
+							}
+
+		nav ul ul {
+					display: none;
+					background: #FCFEBF;
+					border-radius: 0px;
+					padding: 0;
+					position: absolute;
+					top: 100%;
+				  }
+
+		nav ul ul li {
+						float: none;
+						border-top: 1px solid #FCFEBF;
+						border-bottom: 1px solid #FCFEBF;
+						position: relative;
+					 }
+		nav ul ul li a {
+							padding: 15px 40px;
+							color: #0000A0;
+						}
+		nav ul ul li a:hover {
+			background: #0000A0;
+color: #0000A0;
+}
+
+
+	nav ul ul li a :active {
+  background-color: #0000A0;
+
+}
+
+		#slides {height:600px;
+	        	width:100%;
+	        	overflow-y:hidden;
+	        	overflow-x:hidden;
+	        	margin-top: 10px;
+						margin-bottom: 10px;
+		        }
+
+						.clock {
+		     		    color: #17D4FE;
+						    font-size: 60px;
+						    font-family: Orbitron;
+						    letter-spacing: 7px;
+								float: right;
+
+						}
+
+						.search {
+margin-top: 0px;
+margin-bottom: 20px;
+padding-top: 0px;
+							float : right;
+						}
+
+
+              .meta {
+                  font-family: Helvetica,Arial,open-sans;
+                  font-size: .8571rem;
+                  font-weight: 600;
+                  color: #111111!important;
+              }
+
+
+
+              @media (max-width: 991px) {
+                .announcements h2 {
+                  border-bottom: none;
+                }
+              }
+
+              @media (max-width: 991px) {
+                .announcements h2.events-heading {
+                  padding-left: 15px;
+                  margin-top: 20px;
+                }
+              }
+
+              .announcements .slick-slider ul {
+                font-family: "Open Sans Condensed", Arial, Verdana, sans-serif;
+              }
+
+              .announcements .slick-slider ul li:last-child {
+                border-bottom: none;
+                margin-bottom:65px;
+              }
+
+              .announcements .slick-slider ul li h3:hover a {
+                color: black;
+                text-decoration: underline;
+              }
+
+              .announcements .slick-slider ul p {
+                font-size: 1.2rem;
+                font-family: "Helvetica Neue", Helvetica, Arial, open-sans;
+              }
+
+              .announcements .slick-slider .all {
+                color: #111111!important;
+                font-family: "Helvetica Neue", Helvetica, Arial, open-sans;
+              }
+
+              .announcements .slick-slider .all:hover {
+                border-bottom: none;
+              }
+
+              .announcements .slick-slider .all .fa-caret-right {
+                padding-left: 6px;
+                position: relative;
+              }
+
+              .announcements .slick-slider .all .fa-caret-right:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 6px;
+                bottom: -4px;
+                right: 0;
+                background-color: #111111;
+              }
+
+              .announcements .left-right-arrows button:first-child {
+                margin-right: 3px;
+              }
+
+              @media (max-width: 991px) {
+                .announcements {
+                  margin: 0 auto;
+                  width: 70%;
+                }
+              }
+
+              @media (max-width: 767px) {
+                .announcements {
+                  width: 80%;
+                }
+              }
+
+              @media (max-width: 500px) {
+                .announcements {
+                  width: 100%;
+                }
+              }
+
+              .left-right-arrows {
+                position: absolute;
+                bottom: 0px;
+                right: 10px;
+              }
+
+              @media (max-width: 767px) {
+                .left-right-arrows {
+                  border-top: -21px;
+                }
+              }
+
+              .left-right-arrows button {
+                height: 38px;
+                width: 38px;
+                border: 1px solid #464646;
+              }
+
+              @media (min-width: 360px) and (max-width: 767px) {
+                .left-right-arrows button {
+                  height: 50px;
+                  width: 50px;
+                }
+              }
+
+
+              .events-section {
+                position: relative;
+                margin: 0 auto;
+              }
+
+              @media (max-width: 991px) {
+                .events-section {
+                  width: 70%;
+                }
+              }
+
+              @media (max-width: 767px) {
+                .events-section {
+                  width: 80%;
+                }
+              }
+
+              @media (max-width: 500px) {
+                .events-section {
+                  width: 100%;
+                }
+              }
+
+              .events-section .slick-slider ul {
+                font-family: "Open Sans Condensed", Arial, Verdana, sans-serif;
+              }
+
+              .events-section .slick-slider ul li {
+                padding: 2rem 0;
+                position: relative;
+              }
+
+
+
+              .events-section .slick-slider ul li:last-child {
+                border-bottom: none;
+                margin-bottom: 65px;
+              }
+
+
+
+              @media (max-width: 767px) {
+                .events-section .slick-slider ul li:after {
+                  width: 80px;
+                }
+              }
+
+              .events-section .slick-slider ul li:hover .events-date {
+                background-color: #461e52;
+                color: #111111;
+              }
+
+              .events-section .slick-slider ul li:hover .event-li h3 {
+                color: #111111!important;
+              }
+
+              .events-section .slick-slider ul li .event-li {
+                display: inline-block;
+                padding-left: 42px;
+              }
+
+              @media (max-width: 767px) {
+                .events-section .slick-slider ul li .event-li {
+                  padding-left: 15px;
+                }
+              }
+
+              .events-section .slick-slider ul li .event-li h3 {
+                display: inline-block;
+                margin-bottom: 8px;
+              }
+
+              @media (max-width: 767px) {
+                .events-section .slick-slider ul li .event-li h3 {
+                  font-size: 1.429rem;
+                }
+              }
+
+              .events-section .slick-slider ul li .event-li p {
+                font-size: 1.214rem;
+                font-weight: 600;
+                color: #000;
+                font-family: "Helvetica Neue", Helvetica, Arial, open-sans;
+              }
+
+              @media (max-width: 767px) {
+                .events-section .slick-slider ul li .event-li p {
+                  font-size: 16px;
+                  /*font-size: 1.6rem;*/
+                }
+              }
+
+              .events-section .slick-slider .all {
+                color: #461e52;
+                font-family: "Helvetica Neue", Helvetica, Arial, open-sans;
+              }
+
+              .events-section .slick-slider .all:hover {
+                border-bottom: none;
+              }
+
+              .events-section .slick-slider .all .fa-caret-right {
+                padding-left: 6px;
+                position: relative;
+              }
+
+              .events-section .slick-slider .all .fa-caret-right:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 6px;
+                bottom: -4px;
+                right: 0;
+                background-color: #fff;
+              }
+
+              .events-section .slick-slider .events-date {
+                min-width: 81px;
+                height: 88px;
+                background-color: #0093e0!important;
+                font-family: "Helvetica Neue", Helvetica, Arial, open-sans;
+                font-weight: 600;
+                padding-top: 19px;
+                display: inline-block;
+                transition: all, 0.4s, ease;
+              }
+
+              @media (max-width: 767px) {
+                .events-section .slick-slider .events-date {
+                  width: 61px;
+                  height: 68px;
+                  padding-top: 10px;
+                }
+              }
+
+              .events-section .slick-slider .events-date a:focus, .events-section .slick-slider .events-date a:hover {
+                color: #fff;
+              }
+
+              .events-section .slick-slider .events-date span {
+                font-weight: 300;
+                font-size: 2.5rem;
+                display: block;
+                padding: 0;
+                line-height: 30px;
+              }
+
+              @media (max-width: 767px) {
+                .events-section .slick-slider .events-date span {
+                  font-size: 1.429rem;
+                }
+              }
+
+              @media (min-width: 991px) {
+                .events-section .left-right-arrows {
+                  bottom: 0px;
+                }
+              }
+              a {
+                color: #0093e0!important;
+                  transition: all,.4s,ease;
+              }
+
+
+
+
+</style>
+
+
+<script type="text/javascript">
+
+
+function home(){
+   document.open("index.html");
+}
+
+function coursesonline(){
+  document.open("coursesonline.html");
+}
+
+function Announcement(){
+  document.open("Announcement.html");
+}
+
+function contact(){
+  document.open("contact.html");
+}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+         $("#show").click(function(){
+    $("p").toggle();
+  });
+});
+</script>
+<script>
+$('.announcement-slider').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		prevArrow: $('.prev-arrow-announcement'),
+		nextArrow: $('.next-arrow-announcement')
+	});
+</script>
+<script>
+	$('.events').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		prevArrow: $('.prev-arrow-events'),
+		nextArrow: $('.next-arrow-events')
+	});
+</script>
+<body>
+<br><br>
+<marquee id="marquee">
+  DAILY ANNOUNCEMENT
+</marquee>
+
+
+<div class = "w80">
+
+  <div id = "header_tabs" role = "navigation" style="padding-top: 40px;">
+
+   
+
+                    <nav style = "width =300px hight = 100px">
+
+                      <ul style= "display: block;">
+                        <li style =" padding-bottom: 0px;"><a href = "index.html" onclick = "index()" style="color:#111111; font-size:12pt;">Home</a>
+                            </li>
+
+                        <li style =" padding-bottom: 0px;"><a href = "coursesonline.html" onclick = "courses()" style="color: #111111; font-size:12pt;">Online Courses</a>
+                            </li>
+
+                      <li style =" padding-bottom: 0px;"><a href = "Announcement.html" onclick = "publication()" style="color: #111111; font-size:12pt;">Announcement</a>
+                      </li>
+                      <li style =" padding-bottom: 0px;"><a href = "contact.html" onclick = "contact()" style="color: #111111; font-size:12pt;">Contact info</a>
+                      </li>
+                          </ul>
+
+                      
+
+    </nav>
+    
+      </div>
+      </div>
+      <div id="a5">
+      <img  src="a1.jpg" width="400px" height="250px"  />
+    </div>
+
+      <br>  <br>  <br>  <br>  <br>   <br> <br> <br> 
+      
+ 
+
+<section class="two-column-list mb-sm-5 pr-lg-3 container-fluid" id="two-column-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pr-0">
+                <section aria-label="Announcements" class="announcements">
+                    
+                  
+                    <div class="announcement-slider border-r-xs-0 border-r position-relative">
+                        <div>
+                            <ul class="nolist list-unstyled position-relative mb-0 px-lg-5 pt-lg-5">
+                                <li class="border-bottom pb-3 mt-3">
+                                    <span class="meta text-uppercase">2019</span>
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="#">
+                                      http://irep.iium.edu.my/73214/
+                                        </a>
+                                    </h3>
+                                    <p class="m-0 post_intro">These studies about Gibran and his works have been written in various languages,<br>
+                                       but the focus here will be on the studies published in English and Arabic, originally or in translation.</p>
+                                </li>
+                                <li class="border-bottom pb-3 mt-3">
+
+                                    <span class="meta text-uppercase"> 2019</span>
+
+
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="#">
+                                    http://irep.iium.edu.my/74221/
+                                        </a>
+                                    </h3>
+                                    <p class="m-0 post_intro"> A review of the grammatical stance of the Qur’anic recitations.</p>
+                                </li>
+                                <li class="border-bottom pb-3 mt-3">
+                                    <span class="meta text-uppercase"> 2019</span>
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="#">
+                                            http://irep.iium.edu.my/54624/
+                                        </a>
+                                    </h3>
+
+                                    <p class="m-0 post_intro">The assumption in the grammatical cause and its impact in refuting the claim of Aristotelian influence.</p>
+                                </li>
+                           
+                          
+                       
+                                <li class="border-bottom pb-3 mt-3">
+                                     <span class="meta text-uppercase">2019</span> 
+
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="#">
+                                          http://irep.iium.edu.my/67768/
+                                        </a>
+                                    </h3>
+                                  
+                                  <p class="m-0 post_intro">The role of probability in argumentation of the usul-sciences: an epistemological study .</p>
+                               
+                               
+                             </li>
+
+                             <li class="border-bottom pb-3 mt-3">
+                                    <span class="meta text-uppercase">Nov 21 / Dec 20 , 2019 </span>
+
+                                    <h3 class="font-weight-bold mt-0">
+                                        <a href="#">
+                                          http://www.iium.edu.my/kulliyyah/kirkhs
+                                        </a>
+                                    </h3>
+                                  
+                                    <p class="m-0 post_intro"> Improve the lingual efficiency on non-native students specialization in arabic language and in <br>Arabic language and literaure:A novel method .</p>
+                                    
+                                </li> 
+                              
+                                
+                               
+                            </ul>
+                          </div>
+                         
+                        </div>
+                  
+                </section>
+            </div>
+
+      <div>
+            
+            
+           
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div> 
+</section>
+
+</body>
+</html>

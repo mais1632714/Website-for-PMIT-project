@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Home Page</title>
+   <style type="text/css">
+     body{
+			margin: 60px;
+			padding: 0px;
+			line-height: 1em;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size:15px;
+			color:black;
+		background: linear-gradient(to left, #9AEDEC 0%, #ffffff 100%);
+		}
+		
+		#header {
+			top: 0px;
+			border: 0px;
+			position: fixed;
+			width: 70%;
+			height: 150px;
+			margin: auto;
+			margin-left: 1%;
+			margin-right: 45%;
+			background: #80807F; }
+
+
+		a {color:#0000A0;}
+
+
+		.w20 {
+			width: 20%;
+			float: left;
+		}
+		.w80{
+			width: 80%;
+			float: left;
+		}
+		#img2 {
+  float: left;
+}
+
+/* .sec1{
+	font-size:20px;
+	 font-style: italic;
+	  color: #111111;
+		float:left;
+		border:30px;
+
+} */
+		#header_tab{
+			width: 1500px;
+			height: 90px;
+			background-color: #FCFEBF;
+
+			background-size: 100%;
+			margin-bottom: 0px;}
+
+		nav { width: 680px;}
+
+		nav ul {
+					padding: 0px;
+					margin: 0px;
+					color: #FCFEBF;
+					background: linear-gradient(to bottom, #80807F 0%, #ffffff 100%);
+					box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+					padding: 0 20px;
+					border-radius: 20px;
+					list-style: none;
+					position: relative;
+					display: block;
+				}
+
+		nav ul:after {
+						content: ""; clear: both; display: block;
+					 }
+
+		nav ul li {
+					float: left;
+				  }
+
+		nav ul li a {
+			display: block; padding:20px 20px;
+			color: #0000A0; text-decoration: none;
+
+				    }
+
+		nav ul li:hover {
+						text-decoration: underline;
+						color:#0000A0;
+						}
+
+		nav ul li:hover > ul {
+								display: inline;
+							 }
+
+		nav ul li:hover a {
+							color: #0000A0;
+							}
+
+		nav ul ul {
+					display: none;
+					background: #FCFEBF;
+					border-radius: 0px;
+					padding: 0;
+					position: absolute;
+					top: 100%;
+				  }
+
+		nav ul ul li {
+						float: none;
+						border-top: 1px solid #FCFEBF;
+						border-bottom: 1px solid #FCFEBF;
+						position: relative;
+					 }
+		nav ul ul li a {
+							padding: 15px 40px;
+							color: #0000A0;
+						}
+		nav ul ul li a:hover {
+			background: #0000A0;
+color: #0000A0;
+}
+
+
+	nav ul ul li a :active {
+  background-color: #0000A0;
+
+}
+#right{
+
+	float: left;;
+	border:1px dotted gray;
+	
+	padding: 20px;
+}
+#right1{
+	border:1px dotted gray;
+	float:left;
+}
+
+		#slides {height:600px;
+	        	width:100%;
+	        	overflow-y:hidden;
+	        	overflow-x:hidden;
+	        	margin-top: 10px;
+						margin-bottom: 10px;
+		        }
+
+						.clock {
+		     		    color: #17D4FE;
+						    font-size: 60px;
+						    font-family: Orbitron;
+						    letter-spacing: 7px;
+								float: right;
+
+						}
+
+						.search {
+margin-top: 0px2
+margin-bottom: 10px;
+padding-top: 0px;
+							float : right;
+						}
+
+		</style>
+		<script type="text/javascript">
+
+         function index(){
+            document.open("index.html");
+        }
+
+				function coursesonline(){
+					 document.open("coursesonline.html");
+				}
+
+				function Announcement(){
+					 document.open("Announcement.html");
+				}
+
+				function contact(){
+					 document.open("contact.html");
+
+			 }
+
+
+		</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		    <script>
+
+		    $(document).ready(function(){
+		         $("#show").click(function(){
+		    $("p").toggle();
+		  });
+		});
+</script>
+
+
+   </head>
+	<body>
+		<div class="search">
+			<form>
+				<input class="input" type="text" placeholder="Search" name="search">
+				</form>
+			</div>
+
+
+	<p align = "left">
+	<div id="header" role = "banner">
+
+		<div class = "w20">
+			<img src="image1.png" width="150px" height="150px" />
+		</div>
+
+		<div class = "w80">
+			<div id = "header_tabs" role = "navigation" style="padding-top: 40px;">
+
+				<nav style = "width =500px hight = 100px">
+
+					<ul style= "display: block;">
+						<li style =" padding-bottom: 0px;"><a href = "index".html" onclick = "index()" style="color:#111111; font-size:12pt;">Home</a>
+	        			</li>
+
+            <li style =" padding-bottom: 0px;"><a href = "coursesonline.html" onclick = "courses()" style="color: #111111; font-size:12pt;">Online Courses</a>
+                </li>
+
+          <li style =" padding-bottom: 0px;"><a href = "Announcement.html" onclick = "publication()" style="color: #111111; font-size:12pt;">Announcement</a>
+          </li>
+          <li style =" padding-bottom: 0px;"><a href = "contact.html" onclick = "contact()" style="color: #111111; font-size:12pt;">Contact info</a>
+          </li>
+	        		</ul>
+
+				</nav>
+      		</div>
+        	</div>
+
+	</div> <br><br><br><br><br><br><br><br>
+	<p ><img id="img2"src="image2.jpg" alt="iium" style="width:500px;height:330px;margin-right:15px;">
+
+	<h1>Adham Hamawiya</h1>
+	<hr>
+			<b>Assistant professor</b><br><br><b>Kulliyah of Islamic and Revealed science</b><br><br><b>IIUM Gombak Campus</b><br><br>
+	</p>
+		
+					<p class="hide">
+						Adham Hamawiya has a Ph.D. in Philosophy of Arts from Al-Baath University in Homs, Syria.<br> As a linguist,
+						 he is an expert editor and a skilled researcher in the field of Arabic Linguistics.<br> 
+						 He is currently an Assistant Professor at the International Islamic University Malaysia​ and a part of
+						  the editorial board of At-Tajdid Journal (IIUM).<br> He has already published several 
+						  articles on the subject of Theoretical Linguistics, and he is preparing to publish on the subject
+						   of Applied Linguistics.<br>
+				 He also interests in the Islamic Thought and the Arabic Codicology.<br>
+				 <br><br><br><br> <hr><br><br><br><br>
+				<div>
+						<div id="right">
+								<ul><b><font color="#0000A0">Academic Qualification </b></ul>
+								   <li>PhD in Arts (Arabic Linguistic Studies) - Doctor of Philosophy, Al-Baath University<br> <br></li>
+								  <li>Master's Degree in Arts (Arabic Linguistic Studies) - Masters Degree, Al-Baath University<br> <br></li>
+								   <li>Bachelor's Degree in Arts (Arabic Language) - Bachelor Degree, Al-Baath University<br> <br></li>
+								   <li> 2017 - 2018 , Iqraa Institute for Arabic Language<br> <br></li>
+								   <li>2016 - 2017 , Scientific Institute for Advanced Training and Studies	<br> <br></li>
+								   </ul>
+							   
+				 <ul><b>Courses Responsibility:</b><br> <br>
+				 <li>The Islamic Worldview, Knowledge and Civilization<br> <br></li>
+				<li>The ADVANCED ARABIC MORPHOLOGY<br> <br></li>
+				 <li>RHETORICAL STUDIES<br> <br></li>
+				 <li> ARABIC LITERARY CRITICISM<br> <br></li>
+				 <li>ISLAMIZATION OF KNOWLEDGE (ARABIC)	<br> <br></li>
+				 <li>ISSUES IN SYNTAX AND MORPHOLOGY<br> <br></li>
+				 </ul>
+				
+			
+		<br/></font> </p> </p>
+
+		<img src="arabic.jpg" width="150px" height="150px" />
+		<img src="m1.jpg" width="150px" height="150px" />
+		<img src="m2.jpg" width="150px" height="150px" />
+	</div> 
+
+<br>
+	  <div id="slides" >
+    	<p style = "text-aling=left">
+
+  		<!-- <img id ="img2" src="image2.jpg" name="slide" width="500" height="400" float="left" /> -->
+
+
+
+		<script type="text/javascript">
+
+			var step=1
+			function slideit(){
+				if (!document.images)
+				return
+				document.images.slide.src=eval("image"+step+".src")
+				if (step<6)
+					step++
+				else
+					step=1
+
+				setTimeout("slideit()",4000)
+
+				}
+
+			slideit()
+		</script>
+		</p>
+	</div>
+
+
+	<p align="center" style="font-size:12pt; color: #275BB3"> Copyright 2019 <br><br>Adham Hamawiya </p>
+
+
+	</body>
+</html>
